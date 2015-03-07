@@ -2,12 +2,9 @@ FROM mazzolino/armhf-debian
 
 MAINTAINER del65@free.fr
 
-ENV MYSQL_ROOT_PASSWORD `head -c 16 /dev/urandom  | sha1sum | cut -c1-40`
-ENV MYSQL_JEEDOM_PASSWORD `head -c 16 /dev/urandom  | sha1sum | cut -c1-40`
-ENV SHELL_ROOT_PASSWORD `head -c 16 /dev/urandom  | sha1sum | cut -c1-40`
-RUN echo MySQL root password : $MYSQL_ROOT_PASSWORD
-RUN echo MySQL jeedom user password : $MYSQL_JEEDOM_PASSWORD
-RUN echo Shell root password : $SHELL_ROOT_PASSWORD
+ENV MYSQL_ROOT_PASSWORD jeedom
+ENV MYSQL_JEEDOM_PASSWORD jeedom
+ENV SHELL_ROOT_PASSWORD jeedom
 
 RUN apt-get update
 RUN apt-get install -y ffmpeg libssh2-php ntp unzip miniupnpc curl wget nginx-common nginx-full openssh-server supervisor cron usb-modeswitch python-serial php5-common php5-fpm php5-cli php5-curl php5-json php5-mysql
