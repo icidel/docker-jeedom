@@ -17,7 +17,7 @@ To build container, you have to go in the directory with the Dockerfile and run 
 You can choose a name for docker image with :
 ``` docker build -t username/name .```
 
-If you only want to test Jeedom and the default password is not a problem for you, you can just... huh, no, you can't do this. (for now).
+If you only want to test Jeedom and the default password is not a problem for you, you can just... huh, no, you can't do that. (for now).
 
 ##Launch JEEDOM container
 
