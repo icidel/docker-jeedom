@@ -17,16 +17,15 @@ To build container, you have to go in the directory with the Dockerfile and run 
 You can choose a name for docker image with :
 ``` docker build -t username/name .```
 
-If you only want to test Jeedom and the default password is not a problem for you, you can just pull the jeedom docker container :
-``` docker pull cquad/jeedom```
+If you only want to test Jeedom and the default password is not a problem for you, you can just... huh, no, you can't do this. (for now).
 
 ##Launch JEEDOM container
 
 This container provides SSH (22) , supervisord (9001) and Jeedom (8080)
 
-```docker run -p 22 -p 8080 -p 9001 --restart=always -d cquad/jeedom```
+```docker run -p 22 -p 8080 -p 9001 --restart=always -d icidel/armhf:jeedom```
 
-If you have build your own image, you have to replace cquad/jeedom by your image name
+If you have build your own image, you have to replace icidel/armhf:jeedom by your image name
 
 By default Jeedom interface login and password are admin/admin, you can change them after the first identification. 
 
