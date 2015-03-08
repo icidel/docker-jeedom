@@ -1,7 +1,7 @@
-docker-jeedom
+docker-jeedom (armhf)
 =============
 
-Jeedom in a docker container
+Jeedom in a docker container, **for Raspberry Pi 2 and other ARMv7 CPU with hardware float computation**
 
 JEEDOM is a home automation project that aims to connect his house, electronic products, its automation projects all together.
 You can control your home locally or from distance at all times and be alerted of an event. 
